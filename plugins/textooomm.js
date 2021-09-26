@@ -40,13 +40,13 @@ Neotro.addCommand({pattern: 'teenuhz ?(.*)', fromMe: am, dontAddCommandList: tru
 
 Neotro.addCommand({pattern: 'romantic ?(.*)', fromMe: am, dontAddCommandList: true}, (async (message, match) => {
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-    var webimage = await axios.get(`https://${Config.BSITE}/api/photooxy/romantic?text=${match[1]}&apikey=${Config.BAPI}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://dapuhy-api.herokuapp.com/api/photooxy/romantic?text=${match[1]}&apikey=TEENUU`, { responseType: 'arraybuffer' })
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: config.BOT_NAME})
 
     }));
 Neotro.addCommand({pattern: 'smoke ?(.*)', fromMe: am, dontAddCommandList: true}, (async (message, match) => {
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-    var webimage = await axios.get(`https://${Config.BSITE}/api/photooxy/smoke?text=${match[1]}&apikey=${Config.BAPI}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://https://dapuhy-api.herokuapp.com/api/photooxy/smoke?text=${match[1]}&apikey=TEENUU`, { responseType: 'arraybuffer' })
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: config.BOT_NAME})
 
     }));
@@ -58,7 +58,7 @@ Neotro.addCommand({pattern: 'burnpaper ?(.*)', fromMe: am, dontAddCommandList: t
     }));
 Neotro.addCommand({pattern: 'lovemessage ?(.*)', fromMe: am, dontAddCommandList: true}, (async (message, match) => {
     if (match[1] === '') return await message.client.sendMessage(message.jid,NEED_WORD);
-    var webimage = await axios.get(`https://${Config.BSITE}/api/photooxy/lovemessage?text=${match[1]}&apikey=${Config.BAPI}`, { responseType: 'arraybuffer' })
+    var webimage = await axios.get(`https://https://dapuhy-api.herokuapp.com/api/photooxy/lovemessage?text=${match[1]}&apikey=TEENUU`, { responseType: 'arraybuffer' })
     await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg, caption: config.BOT_NAME})
 
     }));
