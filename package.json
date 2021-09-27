@@ -2,7 +2,7 @@
   "name": "Hashzi-1",
   "version": "1.3.2",
   "description": "Alexa project - a Whatsapp userbot helping to improve your Whatsapp experience.",
-  "main": "./Hashzi-1/bot.js",
+  "main": "./ales/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
